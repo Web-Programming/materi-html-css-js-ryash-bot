@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 4</title>
+</head>
+<body>
+    <h2>Kalkulator bangun datar</h2>
+    
+    <input type="number" id="input1" placeholder="Angka pertama">
+    <input type="number" id="input2" placeholder="Angka kedua">
+    
+    <br><br>
+    
+    <button onclick="hitung('persegi')">Luas Persegi</button>
+    <button onclick="hitung('persegiPanjang')">Luas Persegi Panjang</button>
+    <button onclick="hitung('segitiga')">Luas Segitiga</button>
+    <button onclick="hitung('lingkaran')">Luas Lingkaran</button>
+    
+    <p id="hasil">Hasil: </p>
+    
+    <script>
+    
+    function hitung(bangunDatar) {
+        var a = Number(document.getElementById("input1").value);
+        var b = Number(document.getElementById("input2").value);
+        var hasil = 0;
+        
+        if(bangunDatar === 'persegi') {
+            hasil = a * a;
+        } else if(bangunDatar === 'persegi Panjang') {
+            hasil = a * b;
+        } else if(bangunDatar === 'segitiga') {
+            hasil = 0.5 * a * b;
+        } else if(bangunDatar === 'lingkaran') {
+            hasil = Math.PI * a * a;
+        }
+        
+        document.getElementById("hasil").innerText = "Luas " + bangunDatar + ": " + hasil.toFixed(2);
+        }
+        </script>
+
+</body>
+</html>
