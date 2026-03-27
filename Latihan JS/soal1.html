@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 1</title>
+</head>
+<body>
+    <h2>Konfirmasi Keluar</h2>
+    <button onclick="konfirmasiKeluar()">Klik di sini</button>
+    <script>
+    function konfirmasiKeluar() {
+      let pilihan = confirm("Apakah kamu ingin keluar?");
+      
+      if (pilihan) {
+        alert("Anda keluar");
+      } else {
+        alert("Anda tetap di halaman");
+      }
+    }
+</script>
+</body>
+</html>

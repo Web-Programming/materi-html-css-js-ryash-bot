@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>index.html
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 3</title>
+</head>
+<body>
+    <h2>Kalkulator Penjumlahan</h2>
+    
+    <input type="number" id="angka1" placeholder="Masukkan angka pertama">
+    <input type="number" id="angka2" placeholder="Masukkan angka kedua">
+    <br><br>
+    
+    <button onclick="hitung()">Hitung</button>
+    <p id="hasil">Hasil: </p>
+    
+    <script>
+    function hitung() {
+      var a = document.getElementById("angka1").value;
+      var b = document.getElementById("angka2").value;
+      var hasil = Number(a) + Number(b);
+
+      document.getElementById("hasil").innerText = "Hasil: " + hasil;
+    }
+  </script>
+</body>
+</html>
