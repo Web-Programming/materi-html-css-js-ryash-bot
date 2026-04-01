@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Scroll ke section
   window.scrollToSection = function(id) {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
